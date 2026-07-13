@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miles-Thompson Acquisition Group, LLC | Property Cleanup · Lot Clearing · Nuisance Abatement</title>
+<meta name="description" content="Alabama-based property services company specializing in nuisance abatement, lot clearing, junk vehicle removal, debris removal, and vacant property cleanouts for municipalities, commercial clients, and property owners across Birmingham and Montgomery, AL.">
+<meta property="og:title" content="Miles-Thompson Acquisition Group, LLC | Property Cleanup · Lot Clearing · Nuisance Abatement">
+<meta property="og:description" content="Alabama-based property services company specializing in nuisance abatement, lot clearing, junk removal, and community revitalization across Birmingham and Montgomery.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mtacquisitiongroup.com">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%231a3a1f%22/><text x=%2250%22 y=%2266%22 font-family=%22Georgia,serif%22 font-weight=%22700%22 font-size=%2250%22 fill=%22%23c8922a%22 text-anchor=%22middle%22>MT</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --green-dark: #1a3a1f;
+  --green-mid: #2d5a35;
+  --green-accent: #4a8c55;
+  --gold: #c8922a;
+  --gold-light: #e8b84b;
+  --off-white: #f5f3ef;
+  --text-dark: #1c1c1c;
+  --text-mid: #4a4a4a;
+  --text-muted: #7a7a7a;
+  --border: #ddd8cf;
+  --white: #ffffff;
+  --red-alert: #c0392b;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; color: var(--text-dark); background: var(--white); font-size: 16px; line-height: 1.6; }
+
+/* NAV */
+nav {
+  background: var(--green-dark);
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 64px;
+  border-bottom: 3px solid var(--gold);
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; }
+.nav-logo-box { width: 38px; height: 38px; background: var(--gold); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; color: var(--green-dark); letter-spacing: 0.5px; }
+.nav-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; color: var(--white); letter-spacing: 0.5px; line-height: 1.2; }
+.nav-name span { display: block; font-size: 11px; font-family: 'Inter', sans-serif; font-weight: 400; color: rgba(255,255,255,0.6); letter-spacing: 1.5px; text-transform: uppercase; }
+.nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+.nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold-light); }
+.nav-cta { background: var(--gold); color: var(--green-dark) !important; padding: 8px 20px; border-radius: 5px; font-weight: 700 !important; transition: background 0.2s !important; }
+.nav-cta:hover { background: var(--gold-light) !important; color: var(--green-dark) !important; }
+
+/* HERO */
+.hero {
+  background: var(--green-dark);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  min-height: 580px;
+}
+.hero-left { padding: 72px 48px 72px 48px; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; }
+.hero-right { background: var(--white); padding: 40px 36px; display: flex; flex-direction: column; justify-content: center; border-left: 4px solid var(--gold); }
+.hero::after { content: ''; position: absolute; bottom: 0; left: 0; width: 60%; height: 4px; background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 100%); }
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(200,146,42,0.15); border: 1px solid rgba(200,146,42,0.4); border-radius: 4px; padding: 5px 14px; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light); margin-bottom: 20px; width: fit-content; }
+.hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: 56px; font-weight: 800; color: var(--white); line-height: 1.0; margin-bottom: 10px; letter-spacing: -0.5px; }
+.hero h1 em { font-style: normal; color: var(--gold-light); }
+.hero-sub { font-size: 16px; color: rgba(255,255,255,0.6); margin-bottom: 28px; line-height: 1.6; max-width: 440px; }
+.hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+.hero-tag { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.8); padding: 5px 14px; border-radius: 4px; font-size: 12px; font-weight: 500; }
+.hero-phone { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.9); font-size: 15px; font-weight: 600; }
+.hero-phone-icon { width: 36px; height: 36px; background: rgba(200,146,42,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+.hero-phone-icon svg { width: 16px; height: 16px; stroke: var(--gold-light); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* HERO FORM */
+.hero-right h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 700; color: var(--green-dark); margin-bottom: 4px; }
+.hero-right p { font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+.form-group { margin-bottom: 12px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+.form-group label { display: block; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 5px; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; font-size: 14px; font-family: 'Inter', sans-serif; color: var(--text-dark); background: var(--off-white); transition: border-color 0.2s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--green-accent); background: var(--white); }
+.form-group textarea { resize: vertical; min-height: 72px; }
+.form-submit { width: 100%; background: var(--gold); color: var(--green-dark); border: none; padding: 13px; border-radius: 6px; font-weight: 700; font-size: 14px; cursor: pointer; letter-spacing: 0.5px; transition: background 0.2s; font-family: 'Inter', sans-serif; }
+.form-submit:hover { background: var(--gold-light); }
+.form-note { font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 8px; }
+
+/* TRUST BAR */
+.trust-bar { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 14px 40px; }
+.trust-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center; }
+.trust-item { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--text-mid); font-weight: 500; }
+.trust-dot { width: 7px; height: 7px; background: var(--green-accent); border-radius: 50%; flex-shrink: 0; }
+
+/* STATS */
+.stats-section { background: var(--green-dark); padding: 44px 40px; }
+.stats-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.stat-item { text-align: center; padding: 0 24px; border-right: 1px solid rgba(255,255,255,0.1); }
+.stat-item:last-child { border-right: none; }
+.stat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 48px; font-weight: 800; color: var(--gold-light); line-height: 1; margin-bottom: 4px; }
+.stat-label { font-size: 13px; color: rgba(255,255,255,0.6); font-weight: 500; letter-spacing: 0.3px; }
+
+/* SECTIONS */
+section { padding: 72px 40px; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-label { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.section-heading { font-family: 'Barlow Condensed', sans-serif; font-size: 40px; font-weight: 700; color: var(--green-dark); line-height: 1.1; margin-bottom: 14px; }
+.section-body { font-size: 16px; color: var(--text-mid); max-width: 620px; line-height: 1.7; margin-bottom: 44px; }
+
+/* PHOTO GALLERY */
+.gallery-bg { background: var(--off-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.gallery-item { position: relative; border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background: #c8d4c8; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s ease; }
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-item.tall { grid-row: span 2; aspect-ratio: auto; }
+.gallery-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 16px 14px; background: linear-gradient(to top, rgba(26,58,31,0.92) 0%, transparent 100%); color: var(--white); font-size: 13px; font-weight: 600; letter-spacing: 0.3px; }
+.gallery-tag { display: inline-block; background: var(--gold); color: var(--green-dark); font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-bottom: 6px; }
+
+/* SERVICES */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.service-card { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 28px; transition: box-shadow 0.2s, transform 0.15s; }
+.service-card:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(26,58,31,0.1); background: var(--white); }
+.service-icon { width: 44px; height: 44px; background: rgba(74,140,85,0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.service-icon svg { width: 22px; height: 22px; stroke: var(--green-accent); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.service-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; color: var(--green-dark); margin-bottom: 8px; }
+.service-card p { font-size: 14px; color: var(--text-mid); line-height: 1.6; }
+
+/* SCOPE */
+.scope-bg { background: var(--off-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.scope-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.scope-block { border-left: 3px solid var(--gold); padding-left: 24px; }
+.scope-block h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: var(--green-dark); margin-bottom: 16px; }
+.scope-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.scope-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--text-mid); line-height: 1.5; }
+.scope-check { width: 18px; height: 18px; background: var(--green-accent); border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+.scope-check svg { width: 10px; height: 10px; stroke: white; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+/* LEADERSHIP */
+.leaders-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.leader-card { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 32px; }
+.leader-initials { width: 52px; height: 52px; background: var(--green-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; color: var(--gold-light); margin-bottom: 16px; }
+.leader-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: var(--green-dark); margin-bottom: 2px; }
+.leader-title { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+.leader-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.leader-list li { font-size: 14px; color: var(--text-mid); padding-left: 14px; position: relative; line-height: 1.5; }
+.leader-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold); font-size: 12px; top: 1px; }
+
+/* CREDENTIALS */
+.cred-bg { background: var(--off-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.cred-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.cred-card { background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+.cred-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+.cred-value { font-size: 14px; font-weight: 600; color: var(--green-dark); line-height: 1.4; }
+.cred-status { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; margin-top: 6px; font-weight: 500; }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+.status-confirmed .status-dot { background: #3a9c5a; }
+.status-confirmed { color: #2d7a45; }
+.status-progress .status-dot { background: #c8922a; }
+.status-progress { color: #a07020; }
+.naics-table { width: 100%; margin-top: 32px; border-collapse: collapse; font-size: 14px; }
+.naics-table thead tr { background: var(--green-dark); }
+.naics-table th { padding: 11px 16px; text-align: left; font-weight: 600; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--white); }
+.naics-table tbody tr { border-bottom: 1px solid var(--border); }
+.naics-table td { padding: 12px 16px; color: var(--text-mid); background: var(--white); }
+.naics-table td:first-child { font-family: monospace; font-weight: 600; color: var(--green-dark); }
+
+/* CONTACT SECTION */
+.contact-section { background: var(--green-dark); padding: 80px 40px; }
+.contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 480px; gap: 64px; align-items: start; }
+.contact-left h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 44px; font-weight: 800; color: var(--white); line-height: 1.05; margin-bottom: 14px; }
+.contact-left h2 em { font-style: normal; color: var(--gold-light); }
+.contact-left p { font-size: 16px; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 36px; }
+.contact-info-item { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+.contact-info-icon { width: 42px; height: 42px; background: rgba(200,146,42,0.15); border: 1px solid rgba(200,146,42,0.3); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.contact-info-icon svg { width: 18px; height: 18px; stroke: var(--gold-light); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.contact-info-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 2px; }
+.contact-info-value { font-size: 15px; color: rgba(255,255,255,0.9); font-weight: 500; }
+.contact-area-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 40px; padding: 8px 20px; font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 8px; }
+
+/* CONTACT FORM */
+.contact-form-box { background: var(--white); border-radius: 10px; padding: 36px; }
+.contact-form-box h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 700; color: var(--green-dark); margin-bottom: 4px; }
+.contact-form-box p { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
+
+/* FOOTER */
+footer { background: #0e1f11; padding: 40px; }
+.footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.footer-brand-name { font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 700; color: rgba(255,255,255,0.85); margin-bottom: 10px; }
+.footer-desc { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; max-width: 280px; }
+.footer-col h4 { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col ul li a { font-size: 13px; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+.footer-col ul li a:hover { color: rgba(255,255,255,0.85); }
+.footer-col ul li { font-size: 13px; color: rgba(255,255,255,0.5); }
+.footer-bottom { max-width: 1100px; margin: 20px auto 0; display: flex; justify-content: space-between; align-items: center; }
+.footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.25); }
+
+/* BUTTONS */
+.btn-primary { background: var(--gold); color: var(--green-dark); padding: 14px 32px; border-radius: 6px; font-weight: 700; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: background 0.2s, transform 0.15s; }
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { border-left: none; border-top: 4px solid var(--gold); }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .scope-grid, .leaders-grid { grid-template-columns: 1fr; }
+  .cred-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-inner { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  nav { padding: 0 20px; }
+  .nav-links { display: none; }
+  section { padding: 52px 20px; }
+  .contact-section { padding: 52px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <img src="data:image/png;base64,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" alt="Miles-Thompson Acquisition Group" style="height:46px;width:auto;">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#work">Our Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#scope">Scope</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#credentials">Credentials</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- HERO WITH INLINE QUOTE FORM -->
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Alabama-Based · State-Certified LLC · Locally Owned</div>
+    <h1>Property Cleanup.<br><em>Done Right.</em></h1>
+    <p class="hero-sub">Nuisance abatement, lot clearing, junk removal, and debris cleanup for municipalities, commercial clients, and property owners across Birmingham & Montgomery.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">Municipal & Government</span>
+      <span class="hero-tag">Commercial</span>
+      <span class="hero-tag">Private Property</span>
+      <span class="hero-tag">Free Estimates</span>
+    </div>
+    <div class="hero-phone">
+      <div class="hero-phone-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      </div>
+      Call us: <a href="tel:12058478142" style="color:inherit;text-decoration:none;">205-847-8142</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <h2>Get a Free Quote</h2>
+    <p>We'll get back to you within 24 hours.</p>
+    <form id="hero-quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <div class="form-row">
+      <div class="form-group"><label>First Name</label><input type="text" name="first_name" placeholder="First name" required></div>
+      <div class="form-group"><label>Last Name</label><input type="text" name="last_name" placeholder="Last name" required></div>
+    </div>
+    <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="(205) 000-0000" required></div>
+    <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="you@email.com" required></div>
+    <div class="form-group">
+      <label>Service Needed</label>
+      <select name="service_needed">
+        <option value="">Select a service...</option>
+        <option>Nuisance Abatement</option>
+        <option>Lot Clearing &amp; Brush Removal</option>
+        <option>Junk Vehicle Removal</option>
+        <option>Debris Removal</option>
+        <option>Vacant Property Cleanout</option>
+        <option>Community Beautification</option>
+        <option>Emergency Property Cleanup</option>
+        <option>Other / Not Sure</option>
+      </select>
+    </div>
+    <div class="form-group"><label>Property Address or Description</label><textarea name="property_details" placeholder="Address or brief description of the property..."></textarea></div>
+    <button type="submit" class="form-submit">Request Free Quote →</button>
+    <p class="form-note">🔒 No obligation · Fast response · Free estimates</p>
+    </form>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="trust-dot"></span>Alabama SOS Certified LLC</div>
+    <div class="trust-item"><span class="trust-dot"></span>State-Certified Formation</div>
+    <div class="trust-item"><span class="trust-dot"></span>Insured — Certificate Available</div>
+    <div class="trust-item"><span class="trust-dot"></span>Rapid Deployment Contractor Network</div>
+    <div class="trust-item"><span class="trust-dot"></span>Safety-Focused Execution</div>
+    <div class="trust-item"><span class="trust-dot"></span>Community-Driven</div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-section">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Service Markets</div></div>
+    <div class="stat-item"><div class="stat-num">6+</div><div class="stat-label">Core Services</div></div>
+    <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">NAICS Codes</div></div>
+    <div class="stat-item"><div class="stat-num">24hr</div><div class="stat-label">Quote Response</div></div>
+  </div>
+</div>
+
+<!-- PHOTO GALLERY -->
+<section id="work" class="gallery-bg">
+  <div class="section-inner">
+    <p class="section-label">Our Work</p>
+    <h2 class="section-heading">Cleanup You Can See</h2>
+    <p class="section-body">From overgrown vacant lots to full debris haul-away — we leave properties clean, cleared, and code-compliant.</p>
+    <div class="gallery-grid">
+
+      <div class="gallery-item tall">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Lot clearing and brush removal" onerror="this.style.background='#2d5a35';this.style.display='block';this.removeAttribute('src')">
+        <div class="gallery-label"><div class="gallery-tag">Lot Clearing</div><div>Full brush & overgrowth removal</div></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Debris and junk removal" onerror="this.style.background='#4a3820';this.style.display='block';this.removeAttribute('src')">
+        <div class="gallery-label"><div class="gallery-tag">Debris Removal</div><div>Bulk haul-away completed</div></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Property cleanup crew" onerror="this.style.background='#3a5a3a';this.style.display='block';this.removeAttribute('src')">
+        <div class="gallery-label"><div class="gallery-tag">Site Prep</div><div>Pre-development lot preparation</div></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=600&q=80" alt="Vacant property cleanout" onerror="this.style.background='#2a4a2a';this.style.display='block';this.removeAttribute('src')">
+        <div class="gallery-label"><div class="gallery-tag">Vacant Cleanout</div><div>Full exterior & property cleanup</div></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=600&q=80" alt="Junk vehicle removal" onerror="this.style.background='#4a3010';this.style.display='block';this.removeAttribute('src')">
+        <div class="gallery-label"><div class="gallery-tag">Vehicle Removal</div><div>Abandoned vehicle coordination</div></div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80" alt="Community beautification project" onerror="this.style.background='#1a3a1f';this.style.display='block';this.removeAttribute('src')">
+        <div class="gallery-label"><div class="gallery-tag">Beautification</div><div>Community revitalization project</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <p class="section-label">What We Do</p>
+    <h2 class="section-heading">Core Services</h2>
+    <p class="section-body">A contractor network built for rapid, reliable deployment across Birmingham and Montgomery — with the documentation municipal clients require.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>Nuisance Abatement</h3>
+        <p>Municipal code-compliant abatement for overgrown lots, hazardous structures, and ordinance violations. Fully documented for city records.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <h3>Lot Clearing & Brush Removal</h3>
+        <p>Full-site clearing of overgrowth, brush, and vegetation for vacant lots, pre-development parcels, and municipal right-of-way.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <h3>Junk Vehicle Removal</h3>
+        <p>Coordination and removal of abandoned or inoperable vehicles from public and private property, including towing logistics.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg></div>
+        <h3>Junk & Debris Removal</h3>
+        <p>Bulk haul-away of construction debris, household junk, and post-demolition material from residential and commercial sites.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+        <h3>Vacant Property Cleanouts</h3>
+        <p>Interior and exterior cleanouts for vacant buildings, abandoned homes, and distressed properties ready for resale or redevelopment.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></div>
+        <h3>Community Beautification</h3>
+        <p>Targeted revitalization projects for neighborhoods, community organizations, and local government beautification initiatives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCOPE -->
+<section id="scope" class="scope-bg">
+  <div class="section-inner">
+    <p class="section-label">Scope of Work</p>
+    <h2 class="section-heading">Who We Serve</h2>
+    <p class="section-body">From emergency city ordinance responses to pre-development commercial site prep — we deliver across both markets.</p>
+    <div class="scope-grid">
+      <div class="scope-block">
+        <h3>Municipal & Government</h3>
+        <ul class="scope-list">
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Nuisance abatement per city ordinance</li>
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Junk vehicle removal & towing coordination</li>
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Vacant lot clearing & overgrowth control</li>
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Structural debris removal post-demolition</li>
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Emergency property cleanup response</li>
+        </ul>
+      </div>
+      <div class="scope-block">
+        <h3>Commercial & Private Property</h3>
+        <ul class="scope-list">
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Full-site cleanouts for vacant properties</li>
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Brush and tree debris removal</li>
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Pre-development lot preparation</li>
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Ongoing maintenance contracts</li>
+          <li><span class="scope-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>Community beautification projects</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="about">
+  <div class="section-inner">
+    <p class="section-label">Leadership</p>
+    <h2 class="section-heading">Our Team</h2>
+    <p class="section-body">Locally owned and operated — led by two Birmingham-based founders with backgrounds in field operations, logistics, and government contracting.</p>
+    <div class="leaders-grid">
+      <div class="leader-card">
+        <div class="leader-initials">SM</div>
+        <h3>Shuntavious Miles</h3>
+        <p class="leader-title">Co-Founder & Director of Operations</p>
+        <ul class="leader-list">
+          <li>Field operations & site supervision</li>
+          <li>Contractor coordination & scheduling</li>
+          <li>Equipment logistics & safety compliance</li>
+          <li>Project execution & quality control</li>
+        </ul>
+      </div>
+      <div class="leader-card">
+        <div class="leader-initials">ET</div>
+        <h3>Eric Thompson</h3>
+        <p class="leader-title">Co-Founder & Director of Business Development</p>
+        <ul class="leader-list">
+          <li>Business development & client relations</li>
+          <li>Contract administration & compliance</li>
+          <li>Government vendor registration</li>
+          <li>Strategic growth & partnership development</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section id="credentials" class="cred-bg">
+  <div class="section-inner">
+    <p class="section-label">Certifications & Registration</p>
+    <h2 class="section-heading">Business Credentials</h2>
+    <p class="section-body">Alabama SOS Certified LLC — locally owned, insured, and registered for government and commercial procurement. Full documentation available upon request.</p>
+    <div class="cred-grid">
+      <div class="cred-card">
+        <div class="cred-label">Entity Type</div>
+        <div class="cred-value">Domestic LLC</div>
+        <div class="cred-status status-confirmed"><span class="status-dot"></span>Alabama-Based</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-label">State Formation</div>
+        <div class="cred-value">Alabama SOS Certified</div>
+        <div class="cred-status status-confirmed"><span class="status-dot"></span>Confirmed — Filed 2025</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-label">Federal Tax ID (EIN)</div>
+        <div class="cred-value">Available Upon Request</div>
+        <div class="cred-status status-confirmed"><span class="status-dot"></span>Confirmed</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-label">SAM.gov / UEI</div>
+        <div class="cred-value">Registration In Progress</div>
+        <div class="cred-status status-progress"><span class="status-dot"></span>In Progress</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-label">General Liability Insurance</div>
+        <div class="cred-value">Certificate Available</div>
+        <div class="cred-status status-confirmed"><span class="status-dot"></span>Upon Request</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-label">Alabama Business License</div>
+        <div class="cred-value">In Process</div>
+        <div class="cred-status status-progress"><span class="status-dot"></span>In Progress</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-label">Montgomery Business License</div>
+        <div class="cred-value">In Process</div>
+        <div class="cred-status status-progress"><span class="status-dot"></span>In Progress</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-label">Ownership</div>
+        <div class="cred-value">Locally Owned LLC</div>
+        <div class="cred-status status-confirmed"><span class="status-dot"></span>Alabama-Based</div>
+      </div>
+    </div>
+    <table class="naics-table">
+      <thead><tr><th>NAICS Code</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>561730</td><td>Landscaping Services</td></tr>
+        <tr><td>562119</td><td>Other Waste Collection</td></tr>
+        <tr><td>238910</td><td>Site Preparation Contractors</td></tr>
+        <tr><td>562219</td><td>Other Nonhazardous Waste Treatment</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- CONTACT / GET A QUOTE -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p style="font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Get In Touch</p>
+      <h2>Ready to <em>Partner</em><br>With Us?</h2>
+      <p>Contact us to discuss your abatement, lot clearing, or property cleanup needs. We serve municipalities, commercial clients, and property owners across Alabama.</p>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <div><div class="contact-info-label">Phone</div><div class="contact-info-value"><a href="tel:12058478142" style="color:inherit;text-decoration:none;">205-847-8142</a></div></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><div class="contact-info-label">Email</div><div class="contact-info-value"><a href="mailto:milesthompsonacq@gmail.com" style="color:inherit;text-decoration:none;">milesthompsonacq@gmail.com</a></div></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><div class="contact-info-label">Service Area</div><div class="contact-info-value">Birmingham & Montgomery, AL</div></div>
+      </div>
+    </div>
+    <div class="contact-form-box">
+      <h3>Request a Free Quote</h3>
+      <p>We'll respond within 24 hours with next steps.</p>
+      <form id="contact-quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" name="first_name" placeholder="First name" required></div>
+        <div class="form-group"><label>Last Name</label><input type="text" name="last_name" placeholder="Last name" required></div>
+      </div>
+      <div class="form-group"><label>Phone</label><input type="tel" name="phone" placeholder="(205) 000-0000" required></div>
+      <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="you@email.com" required></div>
+      <div class="form-group">
+        <label>Service Needed</label>
+        <select name="service_needed">
+          <option value="">Select a service...</option>
+          <option>Nuisance Abatement</option>
+          <option>Lot Clearing &amp; Brush Removal</option>
+          <option>Junk Vehicle Removal</option>
+          <option>Debris Removal</option>
+          <option>Vacant Property Cleanout</option>
+          <option>Community Beautification</option>
+          <option>Emergency Property Cleanup</option>
+          <option>Municipal / Government Contract</option>
+          <option>Other / Not Sure</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Property Address</label><input type="text" name="property_address" placeholder="Street address or cross streets"></div>
+      <div class="form-group"><label>Project Details</label><textarea name="project_details" placeholder="Brief description of what needs to be done, property size, timeline, or any other details..."></textarea></div>
+      <button type="submit" class="form-submit">Submit Request →</button>
+      <p class="form-note">🔒 No obligation · Free estimates · 24hr response</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="data:image/png;base64,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" alt="Miles-Thompson Acquisition Group" style="height:50px;width:auto;margin-bottom:12px;display:block;">
+      <p class="footer-desc">Alabama-based property services company specializing in nuisance abatement, lot clearing, junk removal, and community revitalization across Birmingham and Montgomery.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Nuisance Abatement</a></li>
+        <li><a href="#services">Lot Clearing</a></li>
+        <li><a href="#services">Junk Vehicle Removal</a></li>
+        <li><a href="#services">Debris Removal</a></li>
+        <li><a href="#services">Vacant Cleanouts</a></li>
+        <li><a href="#services">Beautification</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Miles-Thompson Acquisition Group, LLC · Alabama SOS Certified LLC · Birmingham & Montgomery, AL</p>
+    <p>📞 <a href="tel:12058478142" style="color:inherit;text-decoration:none;">205-847-8142</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
